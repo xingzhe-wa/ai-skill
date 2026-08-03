@@ -1,0 +1,84 @@
+{
+  // 云效账号token
+  "token": "",
+  // 云效组织id
+  "organizationId": "",
+  "apiBaseUrl": "https://openapi-rdc.aliyuncs.com/oapi/v1/projex/organizations",
+  // 项目空间映射
+  "spaceMap": {
+    "CMSCEB": "f5b752b054ae4204e3f690b64d",
+    "CMSPAL": "ca8fec0af6e848fa0c94d922c8",
+    "SGPO": "573bcadcdd8dc7ed46a9da228e",
+    "ROSCRW": "381922411e723c5634ba5f0338",
+    "HXCREW": "be30037cc0a372836f1a052ffd"
+  },
+  //  本地项目位置映射
+  "projects": [
+    {
+      "name": "crew-client-3.0",
+      "path": "D:/WorkFile/PAI_ER/code/crew-client-3.0",
+      "side": "client",
+      "keywords": [
+        "甘特",
+        "客户端",
+        "client"
+      ]
+    },
+    {
+      "name": "crew-server-3.0",
+      "path": "D:/WorkFile/PAI_ER/code/crew-server-3.0",
+      "side": "server",
+      "keywords": [
+        "管理端",
+        "服务端",
+        "数据库",
+        "server",
+        "admin",
+        "后台"
+      ]
+    }
+  ],
+  "routingKeywords": {
+    "bug": [
+      "bug",
+      "缺陷",
+      "报错",
+      "异常",
+      "复现"
+    ],
+    "refactor": [
+      "重构",
+      "改造",
+      "迁移"
+    ],
+    "feature": [
+      "新增",
+      "新功能",
+      "支持",
+      "增加"
+    ],
+    "apiChange": [
+      "接口",
+      "api",
+      "字段",
+      "协议"
+    ],
+    "multiEnd": [
+      "前端",
+      "后端",
+      "客户端",
+      "服务端",
+      "app",
+      "h5"
+    ],
+    "smallChange": [
+      "文案",
+      "配置",
+      "样式微调"
+    ]
+  },
+  // 文档输出目录
+  "output": {
+    "dir": "output"
+  }
+}

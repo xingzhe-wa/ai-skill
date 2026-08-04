@@ -1,0 +1,60 @@
+{
+  "manifest_version": 3,
+  "name": "语雀私有评论",
+  "version": "0.1.0",
+  "description": "在语雀文档页管理只保存在本地目录中的个人评论。",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://yuque.com/*",
+    "https://*.yuque.com/*"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "语雀私有评论",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png"
+    }
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://yuque.com/*",
+        "https://*.yuque.com/*"
+      ],
+      "js": [
+        "content-script.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "icons/float-ball.png",
+        "icons/icon16.png",
+        "icons/icon32.png",
+        "icons/icon48.png",
+        "icons/icon128.png"
+      ],
+      "matches": [
+        "https://yuque.com/*",
+        "https://*.yuque.com/*"
+      ]
+    }
+  ]
+}
